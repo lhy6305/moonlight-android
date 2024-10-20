@@ -54,7 +54,8 @@ android {
         }
         nonRootAccessibility {
             // canRequestFilterKeyEvents requires minimum SDK 18
-            minSdk 18
+            // but the NDK requires it to be at least 21
+            minSdk 21
 
             externalNativeBuild {
                 ndkBuild {
